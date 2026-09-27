@@ -1,6 +1,6 @@
 forge-std/=../../node_modules/forge-std/src
 halmos-cheatcodes=../../node_modules/halmos-cheatcodes
-lean-imt/=../../node_modules/@zk-kit/lean-imt.sol
+lean-imt/=lib/lean-imt/
 @oz/=node_modules/@openzeppelin/contracts
 @oz-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable
 @upgrades/=../../node_modules/@openzeppelin/foundry-upgrades/src/
@@ -8,3 +8,4 @@ poseidon/=../../node_modules/poseidon-solidity
 
 contracts/=src/contracts
 interfaces/=src/interfaces
+zipcoin/=src/zipcoin/
