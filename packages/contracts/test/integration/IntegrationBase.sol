@@ -87,7 +87,9 @@ contract IntegrationBase is IntegrationUtils {
   //////////////////////////////////////////////////////////////*/
 
   function setUp() public virtual {
-    vm.createSelectFork(vm.rpcUrl('mainnet'));
+    uint256 _forkBlock = vm.envOr('FORK_BLOCK', uint256(0));
+    if (_forkBlock == 0) vm.createSelectFork(vm.rpcUrl('mainnet'));
+    else vm.createSelectFork(vm.rpcUrl('mainnet'), _forkBlock);
 
     vm.startPrank(_OWNER);
 
